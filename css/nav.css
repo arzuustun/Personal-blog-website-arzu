@@ -51,7 +51,7 @@ nav ul {
 .nav-item > a:visited {
 	color:  #691b4f;
 }
-@media (min-width: 250px) and (max-width: 1025px) {
+@media (min-width: 250px) and (max-width: 1357px) {
 	#nav-ul {
 		display: flex;
 		flex-direction: row;
