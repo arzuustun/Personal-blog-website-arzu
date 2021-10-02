@@ -1,0 +1,98 @@
+@import "nav.css";
+@import "footer.css";
+@import "blog-post.css";
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:rgb(234, 222, 240);
+    grid-template-rows: 10% 90%; /*10% 70% 20%*/
+    grid-gap: 30px;
+   /*  height: 120vh;
+   grid-template-areas:
+            "nav nav nav"
+            "box box box"
+            "footer footer";     */  
+}
+.body-box{
+    padding: 0 25px 0 25px;
+}
+.box{
+    display: grid;
+    grid-template:repeat(2,1fr) / repeat(3,3fr);
+    justify-content: center;
+    grid-gap: 25px;
+    padding-left: 30px;
+}
+
+.box-post-link{
+color: black;
+text-align: right ! important;
+}
+.box-text{
+    font-family: 'Times New Roman', serif;
+}
+.box-read-more{
+    text-align: right;
+}
+.box-read-more > a:visited {
+	color: darkmagenta
+}
+.box-1:hover{
+    transform: scale(1.1);
+}
+.box-2:hover{
+    transform: scale(1.1);
+}
+.box-3:hover{
+    transform: scale(1.1);
+}
+.box-4:hover{
+    transform: scale(1.1);
+}
+.box-5:hover{
+    transform: scale(1.1);
+}
+.box-6:hover{
+    transform: scale(1.1);
+}
+
+.align{
+    text-align: center;
+}
+.img-blog{
+    vertical-align:auto;
+    border-radius: 2%;
+    flex-shrink: 0;
+    height: 200px;
+    width: 400px;
+}
+@media (min-width: 250px) and (max-width: 1025px) {
+    .box{
+        display: grid;
+        grid-template: repeat(auto-fill, minmax(250px, 3fr)) / repeat(auto-fill, minmax(250px, 1fr));
+        justify-content: center;
+        grid-gap: 25px;
+        padding: 30px;
+    } 
+    .container{
+        display: grid;
+        background-color:rgb(234, 222, 240);
+        grid-template-rows:5% 95%;
+        grid-gap: 10px;   
+    }
+    .img-blog{
+        border-radius: 2%;
+        flex-shrink: 0;
+        height: 100px;
+        width: 200px;
+    }
+}
