@@ -4,6 +4,6 @@ Udacity Front-End Web Developer Nanodegree - CSS, Website Layout, Website Compon
 
 ## Start
 
-The project can be run by opening the index.html file in the browser.
+The project can be run by opening the blog.html file in the browser.
 
 
