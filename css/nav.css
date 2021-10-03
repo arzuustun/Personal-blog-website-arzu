@@ -12,12 +12,7 @@ nav{
 	font-size: 1.2em;
 	height: 100%;
 }
-.nav-name{
-    font-weight: bold;
-    font-size: 22px;
-    height: 1em;
-    width: 1em;
-}
+
 #nav-ul {
 	display: flex;
     flex-direction: row;
@@ -52,16 +47,34 @@ nav ul {
 	color:  #691b4f;
 }
 @media (min-width: 250px) and (max-width: 1357px) {
+	nav{
+		display: flex;
+		background-color: rgb(234, 222, 240);
+		flex-flow: row nowrap;
+	}
+	.nav-name-div{
+		display: flex;
+		flex-flow: row nowrap;
+		color: rgb(108, 48, 165);
+		font-size: 1em;
+		height: 100%;
+	}
 	#nav-ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		height: 100%;
+		padding: 0px;
+		margin: 0px;
 	}
 	.nav-item > a {
 		font-weight: 700;
 		padding: 5px 10px;
 		border-radius: 2px;
+	}
+	.nav-name{
+		font-weight: bold;
+		font-size: 14px;
 	}
 	
 }
